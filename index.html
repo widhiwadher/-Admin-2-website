@@ -1,0 +1,474 @@
+<html>
+
+<head>
+  <title>My First Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <link rel="stylesheet" type="text/css" href="dashboard.css/dashboard.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+    crossorigin="anonymous"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+  <script src="https://kit.fontawesome.com/d8a5026d18.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+  <div class="container-fluid background-color:">
+    <div class="row">
+
+
+      <div class="col-lg-2 " id="mySide" style="background-color:#3057C9;">
+        <div class="ms-1 bd-highlight fs-4 side-color" id="nav-content">
+          <i class="far fa-grin-beam ms-3"></i>
+          <span>&nbsp;&nbsp;SB ADMIN </span>
+
+          <a class="d-flex text-center" href="index.html"></a>
+        </div>
+        <hr class="solid">
+        <a href="index.html">
+          <i class="fas fa-tachometer-alt 2x side-color ms-4 fa-flag"></i>
+          <span class="side-color ">&nbsp;Dashboard</span>
+        </a>
+        <hr class="solid">
+        <div class="top-heading ms-3" style="color:thistle;">Interface</div>
+
+        <div class="accordion accordion-flush" id="accordionExample">
+          <div class="accordion-item ">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button collapsed remove-border side-color" type="button"
+                data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false"
+                aria-controls="collapseOne"><i class="fas fa-cog 2x side-color  "></i>&nbsp;&nbsp;Components</button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse" area aria-labelledby="headingOne"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body" style="background-color: ghostwhite;">
+                <ul class="text-color small" style="background-color: gainsboro;">Custom Cumponents</ul>
+                <ul><a class=" text-color" href="#">Buttons</a></ul>
+                <ul><a class=" text-color" href="grid.html">Cards</a></ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion accordion-flush" id="accordionExample">
+          <div class="accordion-item display">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed  side-color" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                <i class="fas fa-wrench 2x side-color fa "></i>
+                <span>&nbsp;&nbsp;Utility</span>
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body" style="background-color: ghostwhite;">
+                <ul class="text-color small" style="background-color: gainsboro;">Custom Utilities</ul>
+                <ul><a class=" text-color" href="#">Colors</a></ul>
+                <ul><a class=" text-color" href="#">Borders</a></ul>
+                <ul><a class=" text-color" href="#">Utilities</a></ul>
+                <ul><a class=" text-color" href="#">Others</a></ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr class="solid">
+        <div class="top-heading ms-3" style="color:thistle;">Addons</div>
+
+        <div class="accordion accordion-flush display" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed  side-color" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                <i class="fas fa-folder  2x side-color fa-flag"></i>
+                <span class=" ms-2 side-color">Pages</span>
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body" style="background-color: ghostwhite;">
+                <ul class="text-color small" style="background-color: gainsboro;">Login Screens:</ul>
+                <ul><a class=" text-color" href="#">Login</a></ul>
+                <ul><a class=" text-color" href="#">Register</a></ul>
+                <ul><a class=" text-color" href="#">Forgot Password</a></ul>
+                <ul class="text-color small" style="background-color: gainsboro;">Other Pages:</ul>
+                <ul><a class=" text-color" href="#">404 Page</a></ul>
+                <ul><a class=" text-color" href="#">Blank Page</a></ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mt-4 mb-4">
+          <i class="fas fa-chart-pie 2x side-color ms-3 "></i>
+          <span class="ms-2 side-color">Charts</span>
+        </div>
+        <div class="mt-4 mb-4">
+          <i class="fas fa-table 2x side-color ms-3 fa-flag"></i>
+          <span class="ms-2  side-color">Tables</span>
+        </div>
+        <hr class="solid">
+        <div class="text-center mt-5 " id="side-bar-button">
+          <i class="fas fa-arrow-circle-left fa-2x rounded fa" style="color:thistle;" id="handleMenu"></i>
+        </div>
+        <div class="text-center mt-5 hide" id="side-bar">
+          <i class="fas fa-arrow-circle-right fa-2x rounded fa " style="color:thistle;" id="handleMenuu"></i>
+        </div>
+        <div class="card">
+          <span class="border border-1 ">
+            <img src="img/unnamed.png" class="img-fluid " alt="">
+          </span>
+        </div>
+
+      </div>
+
+
+      <div class="col-lg-10" id="mainContent">
+        <div class="row">
+          <div class="col-lg-12">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+              <div class="container-fluid">
+                <div class="col-lg-6">
+                  <form class="d-flex">
+                    <input class="navbar navbar-light w-50 h-25" type="search" placeholder="Search for..."
+                      aria-label="Search">
+                    <button class="btn btn-primary" type="submit"><i class="fa fa-search" aria-hidden="true"></i>
+                    </button>
+                  </form>
+                </div>
+                <div class="col-lg-6">
+                  <ul class="navbar-nav float-end">
+                    <li class="nav-item dropdown ">
+                      <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuLink" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fas fa-bell"></i>
+                      </a>
+                      <ul class="dropdown-menu " aria-labelledby="dropdownMenuLink">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item dropdown ">
+                      <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuLink" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="far fa-envelope"></i>
+                      </a>
+                      <ul class="dropdown-menu " aria-labelledby="dropdownMenuLink">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      </ul>
+                    </li>
+                    <li>Widhi Wadher
+                      <img src="img/man-icon-profile-member-user-260nw-1335068444.webp" class="rounded "
+                        style="max-height:50px;width:45px;" alt="...">
+                    </li>
+                  </ul>
+                </div>
+
+
+              </div>
+            </nav>
+
+          </div>
+
+        </div>
+
+
+        <div class="row p-3 ">
+          <div class="col-lg-6">
+            <h3>Dashboard</h3>
+          </div>
+          <div class="col-lg-6">
+            <button class="btn btn-primary float-end"><i class="fas fa-download"></i>&nbsp;&nbsp;Generate
+              Report</button>
+          </div>
+
+        </div>
+        <div class="row p-3">
+          <div class="col-sm-3">
+            <div class="card box-style color-blue">
+              <div class="card-body">
+                <p class=" text-uppercase fw-bold text-primary">EARNINGS (MONTHLY) </p>
+                <p class="fs-5 ">$40,000 <i class="far fa-comments fa-2x float-end icon-grey "></i></p>
+
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="card box-style color-green ">
+              <div class="card-body">
+                <p class="text-uppercase fw-bold text-success">EARNINGS (ANNUAL)</p>
+                <p class="fs-5 ">$18,000 <i class="fas fa-dollar-sign fa-2x float-end icon-grey "></i></p>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-3">
+            <div class="card box-style color-sea">
+              <div class="card-body">
+                <p class="text-uppercase fw-bold text-info ">tasks<i
+                    class="fas fa-clipboard-list fa-2x  float-end icon-grey p-3"></i></p>
+                <div class="row g-3" style="margin-top: 5px;">
+                  <div class="fs-5">50%</div>
+                  <div class="progress" style=" margin-top: -22px; margin-left: 60px;">
+                    <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50"
+                      aria-valuemin="0" aria-valuemax="100">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="card box-style color-orange">
+              <div class="card-body">
+                <p class="text-uppercase fw-bold text-warning ">pending request</p>
+                <p class="fs-5 ">18 <i class="far fa-comments fa-2x float-end icon-grey"></i></p>
+
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="row p-3">
+          <div class="col-lg-8">
+            <div class="card mb-3 ">
+              <div class="card-header text-primary">Earning Overview</div>
+              <div class="card-body h-50">
+
+                <canvas id="speedChart" width="760" height="358"></canvas>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card mb-3">
+              <div class="card-header text-primary">Revenue Sources</div>
+              <div class="card-body h-50" style="margin-top: 50px;">
+                <canvas id="chartjs-4" class="chartjs" width="1190" height="964"
+                  style="display: block; height: 265px; width: 350px;"></canvas>
+                <div class="mt-3 text-center small">
+                  <Span class="mr-2"><i class="fas fa-circle " style="color: rgb(0, 0, 255);"></i> Direct</Span>
+                  <span class="mr-2"><i class="fas fa-circle" style="color:rgb(173, 255, 47);"></i>Social</span>
+                  <span class="mr-2"><i class="fas fa-circle" style="color:hsl(197, 71%, 73%);"></i>Referral</span>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="row p-3">
+          <div class="col-lg-6">
+            <div class="card mb-3">
+              <div class="card-header text-primary">Projects</div>
+              <div class="card-body h-100">
+                <h4 class="form-text font-weight-bold">Server Migration
+                  <span class="float-end">20%</span>
+                </h4>
+
+                <div class="progress mb-3">
+                  <div class="progress-bar bg-danger " role="progressbar" style="width: 20%;" aria-valuenow="25"
+                    aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <h4 class="form-text font-weight-bold">Sales Tracking<span class="float-end">40%</span></h4>
+                <div class="progress mb-3">
+                  <div class="progress-bar bg-warning" role="progressbar" style="width: 40%;" aria-valuenow="40"
+                    aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <h4 class="form-text font-weight-bold">Customer Database<span class="float-end">60%</span></h4>
+                <div class="progress mb-3">
+                  <div class="progress-bar bg-primary" role="progressbar" style="width: 60%;" aria-valuenow="60"
+                    aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <h4 class="form-text form-weight-bold">Payout Details<span class="float-end">80%</span></h4>
+                <div class="progress mb-3">
+                  <div class="progress-bar bg-info" role="progressbar" style="width: 80%" aria-valuenow="80"
+                    aria-valuemin="0" aria-valuemax="80"></div>
+                </div>
+                <h4 class="form-text form-weight-bold">Accountsetup<span class="float-end">Complete!</span></h4>
+                <div class="progress mb-3">
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="100"
+                    aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6" style="background-color: transparent;">
+            <div class="card mb-3">
+              <div class="card-header text-primary">Illustrations</div>
+              <div class="card-body h-100">
+                <div class="text-center">
+                  <img src="img/48ee21b8d0e4f3827701918627111d0d.png" alt="" style="width: 470;height: 290;">
+                </div>
+              </div>
+              <p class="text-center p-3"> Add some quality, svg illustration to the project courtesy of undrawn, a
+                constantly updated collection of beautiful svg images that you can use completely free and without
+                attribution! </p>
+              <a href="#" class="stretched-link text-start p-3">Browse illustrations on unDraw</a>
+            </div>
+          </div>
+        </div>
+        <button class="btn btn-primary " id="toggle"><i class="fas fa-chart-line p-1"></i> Click here</button>
+        <div class="tableHolder" style="color: violet;">
+        
+          <table class="table table-striped table-hover " id="myTable">
+            <thead>
+              <tr>
+                <th scope="col">SL.No</th>
+                <th scope="col">Customer ID</th>
+                <th scope="col">Salary</th>
+              </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+          </table>
+          <canvas id="myChart" width="200" height="60"></canvas>
+        </div>
+
+
+      </div>
+
+    </div>
+  </div>
+
+
+  </div>
+
+
+
+  <script>
+    (function ($) {
+      $('#handleMenu').click(function () {
+        $('#mySide').css("width", '100px');
+        $('#mainContent').css("width", "1280px");
+        $('#handleMenu').hide();
+        $('#handleMenuu').show();
+      })
+      $('#handleMenuu').click(function () {
+        $('#mySide').css("width", '250px');
+        $('#mainContent').css("width", "1150px");
+        $('#handleMenu').show();
+        $('#handleMenuu').hide();
+      })
+
+      $.ajax({
+        type: "GET",
+        url: "https://cdn.jsdelivr.net/gh/highcharts/highcharts@v7.0.0/samples/data/usdeur.json",
+        data: { "type": "check" },
+        success: function (orders) {
+          var content = "";
+          for (i = 0; i < orders.length; i++) {
+            $("#myTable").append('<tr><td>' + (i + 1) + '</td><td>' + orders[i][0] + '</td><td>' + orders[i][1] + '</td></tr>');
+          }
+          $("#myTable").append(content);
+        }
+
+      });
+
+      $("#toggle").click(function () {
+        $("#myTable").toggle("#myChart");
+      })
+
+    })(jQuery);
+
+    var speedCanvas = document.getElementById("speedChart");
+
+    Chart.defaults.global.defaultFontFamily = "Lato";
+    Chart.defaults.global.defaultFontSize = 15;
+
+    var speedData = {
+      labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Sept", "Oct", "Nov"],
+      datasets: [{
+        fill: false,
+        borderColor: "#bae755",
+        backgroundColor: "#e755ba",
+        pointBackgroundColor: "#55bae7",
+        pointBorderColor: "#55bae7",
+        pointHoverBackgroundColor: "#55bae7",
+        pointHoverBorderColor: "#55bae7",
+        data: [10000, 5000, 15000, 10000, 20000, 15000, 20000, 30000, 25000, 40000],
+      }]
+    };
+
+    var chartOptions = {
+      legend: {
+        display: false,
+        position: 'top',
+        labels: {
+          boxWidth: 80,
+          fontColor: 'blue'
+
+        }
+      }
+    };
+
+    var lineChart = new Chart(speedCanvas, {
+      type: 'line',
+      data: speedData,
+      options: chartOptions
+
+
+    });
+
+    new Chart(document.getElementById("chartjs-4"),
+      {
+        "type": "doughnut", "data":
+        {
+          "datasets": [{
+            "label": "My First Dataset", "data": [55, 15, 30],
+            "borderWidth":20,
+            "backgroundColor": ["rgb(0, 0, 255)", "rgb(173, 255, 47)",
+              "hsl(197, 71%, 73%)"]
+          }]
+        }
+      });
+
+    var sidenav = document.getElementById("side-bar-button");
+
+    var data = { Jan: 20, Feb: 30, Mar: 10, April: 35, May: 15, June: 28, July: 42, Aug: 40, Sept: 38, Oct: 22, Nov: 7, Dec: 80 };
+    var label = [];
+    var value = [];
+    for (var prop in data) {
+      label.push(prop);
+      value.push(data[prop]);
+
+      var ctx = document.getElementById("myChart").getContext('2d');
+      var chart = new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: label,
+
+          datasets: [{
+            label: 'Tabular Data in Chart Form',
+            backgroundColor: 'rgb(0,99,132))',
+            borderColor: 'rgb(255,99,132)',
+            data: value,
+
+          }]
+        },
+
+        options: {
+          display: true,
+          text: 'Tabular data in Chart'
+        }
+
+      });
+    }
+
+
+
+
+
+  </script>
+</body>
+
+
+</html>
